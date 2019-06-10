@@ -1,0 +1,6 @@
+[submodule "filebrowser"]
+	path = filebrowser
+	url = git@github.com:opendocs-live/filebrowser.git
+[submodule "opendocs_api"]
+	path = opendocs_api
+	url = git@github.com:opendocs-live/opendocs_api.git
