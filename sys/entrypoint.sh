@@ -1,4 +1,5 @@
 #!/bin/bash
-nohup python3 /dist/opendocs.py &
-nohup /dist/filebrowser -r /userdata  -p 9000 &
+echo "#### STARTING OPENDOCS SERVER #####"
+python3 /dist/opendocs.py &
+/dist/filebrowser -r $FILEBROWSERROOT  -p 9000 &
 nginx -g 'daemon off;'

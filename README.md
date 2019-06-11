@@ -9,4 +9,4 @@ docker run -ti -p 8003:80 \
 -e FILEBROWSERKEY='pUeV6GPvb4hq9O721TiIEKjAn4uv2cwDXAKEUrP51pHkA3jHQJgxfZeEMsDUrx+6AFS7sNGRjbvBNovlfcvNQg==' \
 -e HOST='http://localhost:8003' \
 -e LOGINHOST='https://login.threefold.me' \
-opendocs bash
+opendocs

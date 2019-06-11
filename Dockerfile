@@ -15,6 +15,4 @@ COPY sys/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 COPY sys/nginx.conf /etc/nginx/nginx.conf
 RUN mkdir /userfolders
-#ENTRYPOINT [ '/entrypoint.sh'  ]
-#CMD [ "tail", "-f", "/dev/null"]
-#CMD ["nginx", "-g", "daemon off;"]
+CMD /entrypoint.sh
