@@ -1,0 +1,19 @@
+#sudo docker run -i -t -d -p 80:80 --restart=always onlyoffice/documentserver
+version: '3'
+services:
+  opendocs:
+    build: .
+    environment:
+      'FILEBROWSERURL': ${FILEBROWSERURL}
+      'FILEBROWSERROOT' : ${FILEBROWSERROOT}
+      'FILEBROWSERKEY': ${FILEBROWSERKEY}
+      'HOST' : ${HOST}
+      'LOGINHOST' : ${LOGINHOST}
+      'SECRETKEY' : ${SECRETKEY}
+
+    ports:
+      - "80:80"
+    volumes:
+      - ./userfolders:/userfolders
+  documentserver:
+    image: "onlyoffice/documentserver"
